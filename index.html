@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="style.css">
+  <title>Assignment(Chapters"1-67")</title>
+</head>
+
+<body>
+
+                                
+<!-- ============================================chapters 43-48===================================== --> 
+
+
+
+  <!-- QUESTION___1 -->
+
+  <a href="" onclick="message1()"> <b> CLICK </b></a>
+
+
+
+  <!-- QUESTION___2 -->
+
+  <div class="bg">
+    <img src="img/th (2).jpg" onclick="message()" height="400px"></div>
+  <div class="bg">
+    <img src="img/th3.jpg" onclick="message()" height="400px"></div>
+  <div class="bg">
+    <img src="img/th (1).jpg" onclick="message()" height="400px"></div>
+
+
+  <!-- QUESTION___3 -->
+
+  <table>
+    <h1>Index Name Class</h1>
+    <tr id="hid">
+      <td>0</td>
+      <td>Sarah 10</td>
+      <td><button onclick="del()">Delete</button></td>
+    </tr>
+    <tr id="hid">
+      <td>1</td>
+      <td>Sadaf 9</td>
+      <td><button onclick="del()">Delete</button></td>
+    </tr>
+    <tr id="hid">
+      <td>3</td>
+      <td>Mahnoor 10</td>
+      <td><button onclick="del()">Delete</button></td>
+    </tr>
+    <tr id="hid">
+      <td>4</td>
+      <td>Maria</td>
+      <td><button onclick="del()">Delete</button></td>
+    </tr>
+  </table>
+
+
+
+  <!-- QUESTION___4 -->
+
+  <h2 class="h2">"Click the image"</h2>
+  <img src="img/pic.jpg" class="img" id="img" onmouseover="changeImg()" onmouseout="changeBef()" alt="">
+
+
+
+
+  <!-- QUESTION___5 -->
+
+  <div class="count">
+    <h1>Click Counter</h1>
+    <h2 id=click> 00</h2>
+    <button class="btn" onclick="incre()">Click me</button>
+    <button class="btn" onclick="decre()">Click ME</button>
+  </div>
+
+
+                                   
+<!-- =======================================Chapter 49--52 EVENTS========================================== --> -->
+
+
+
+  <!-- QUESTION___1 -->
+
+  <form id="form">
+    <label for="First Name">First Name</label>
+    <input type="text" placeholder="Enter your first Name" name="First Name" id="firstName">
+
+    <label for="Last Name">Last Name</label>
+    <input type="text" placeholder="Enter your Last Name" name="Last Name" id="lastName">
+
+    <label for="Date Of Birth">Date Of Birth</label>
+    <input type="date" placeholder="Enter your Date Of Birth" name="Date Of Birth" id="dateOfBirth">
+    <BR></BR>
+    <label for="Mobile No">Mobile No</label>
+    <input type="number" placeholder="Enter your Mobile No" name="Mobile No" id="moblie">
+    <BR></BR>
+    <label for="Email Address">Email Address</label>
+    <input type="text" placeholder="Enter yourEmail Address" name="Email Address" id="email">
+
+    <button onclick="display()">submit</button>
+
+  </form>
+
+
+
+  <!-- QUESTION___2 -->
+
+  <h1>Item details</h1>
+  <p id="para">
+    When it comes to serving face, we’ve got you covered. Whether you have a favorite brand or need help finding the
+    perfect match, Sephora is your No.1 destination for everything beauty.
+    If you’re looking for the best makeup (and we know you are), a good place to start is with our bestsellers. Read
+    thousands of reviews from fellow makeup-lovers and
+    find top rated products for your beauty routine.
+    If you’re still having a hard time finding the perfect product,
+    check out our buying guides and quizzes or consult millions of users in our Sephora Community.
+    Make sure you have a solid foundation with the perfect prime
+    this will ensure that the rest of your face makeup goes on smoothly and lasts longer.
+    Next, it’s time for concealer. If you need just the right shade,
+    refer to our Color IQ to make sure everything matches up.
+    Color IQ can also help you find the best foundation shade (and even brand) for your coverage needs.
+    Some of the most popular foundation brands include NARS, Stila and Fenty.
+    Add some color with a contour palette. Start with a darker,
+    matte shade that simulates a shadowed-look and enunciates your cheekbones. Next, add some warmth with a bronzer in a
+    C-shape along your hairline. Finally, apply blush for that perfect rosy look. Some of the best face palette brands
+    include Tarte and Anastasia Beverly Hills.
+
+    <a href="javascript:void(0)" onclick="readMore()"> Read More</a>
+  </p>
+
+
+
+  <!-- QUESTION___3 -->
+
+  <div id="wrapper">
+    <table align='center' cellspacing=2 cellpadding=5 id="data_table" border=1>
+      <tr>
+        <th>Name</th>
+        <th>Country</th>
+        <th>Age</th>
+      </tr>
+
+      <tr id="row1">
+        <td id="name_row1">Sarah</td>
+        <td id="country_row1">Pakistan</td>
+        <td id="age_row1">20</td>
+        <td>
+          <input type="button" id="edit_button1" value="Edit" class="edit" onclick="edit_row('1')">
+          <input type="button" id="save_button1" value="Save" class="save" onclick="save_row('1')">
+          <input type="button" value="Delete" class="delete" onclick="delete_row('1')">
+        </td>
+      </tr>
+
+      <tr id="row2">
+        <td id="name_row2">Mahnoor</td>
+        <td id="country_row2">Pakistan</td>
+        <td id="age_row2">20</td>
+        <td>
+          <input type="button" id="edit_button2" value="Edit" class="edit" onclick="edit_row('2')">
+          <input type="button" id="save_button2" value="Save" class="save" onclick="save_row('2')">
+          <input type="button" value="Delete" class="delete" onclick="delete_row('2')">
+        </td>
+      </tr>
+
+      <tr id="row3">
+        <td id="name_row3">Sadaf</td>
+        <td id="country_row3">Pakistan</td>
+        <td id="age_row3">18</td>
+        <td>
+          <input type="button" id="edit_button3" value="Edit" class="edit" onclick="edit_row('3')">
+          <input type="button" id="save_button3" value="Save" class="save" onclick="save_row('3')">
+          <input type="button" value="Delete" class="delete" onclick="delete_row('3')">
+        </td>
+      </tr>
+
+      <tr>
+        <td><input type="text" id="new_name"></td>
+        <td><input type="text" id="new_country"></td>
+        <td><input type="text" id="new_age"></td>
+        <td><input type="button" class="add" onclick="add_row();" value="Add Row"></td>
+      </tr>
+
+    </table>
+  </div>
+
+
+
+
+                  
+  <!-- =================================Chapter 53--57 MODAL================================= --> 
+
+
+  <!-- QUESTION___1 -->
+
+  <div>
+
+    <img onclick="showImg(this)" class="image" data-toggle="modal" data-target="#exampleModal" src="img/img.jpg" alt="">
+    <img onclick="showImg(this)" class="image" data-toggle="modal" data-target="#exampleModal" src="img/img2.jpg"
+      alt="">
+    <img onclick="showImg(this)" class="image" data-toggle="modal" data-target="#exampleModal" src="img/img3.jpg"
+      alt="">
+    <img onclick="showImg(this)" class="image" data-toggle="modal" data-target="#exampleModal" src="img/img4.jpg"
+      alt="">
+
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <img class="largeImg" src="" alt="" id="modalImg">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  
+                 
+ <!-- ===============================Chapter 58--67 DOM===================================--> 
+
+  <!-- QUESTION___1 -->
+
+  <div>
+    <h1>DOM</h1>
+    <div id="form-content" class="content">
+      <label for="first-name">First Name</label>
+      <input type="text" id="first-name">
+      <label for="last-name">Last Name</label>
+      <input type="text" id="last-name">
+      <label for="email">Email </label>
+      <input type="text" id="email">
+    </div>
+    <div id="main-content" class="content">
+      <p class="render">First Name : ABCD</p>
+      <p class="render">Last Name : Bank</p>
+      <p class="render">Email : ABCDbank@example.com</p>
+      <p class="render">Country : Pakistan</p>
+      <p class="render">contact : +923 300 123456</p>
+
+    </div>
+  </div>
+
+
+  <script src="app.js"></script>
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
